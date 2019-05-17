@@ -43,7 +43,7 @@ Vue.use(VueUpload)
 
 | 参数 | 类型 | 备注 |
 |  ------ | ------ | ------ |
-| actionUrl | sting | 上传地址 |
+| actionUrl | String | 上传地址 |
 | limit | Number | 上传图片限制数量 |
 | listStyle | Object | 图片列表样式(驼峰命名：backgroundColor) |
 | deleStyle | Object | 删除图片样式(驼峰命名：backgroundColor) |
