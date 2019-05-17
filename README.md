@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/vue-uploaders.svg)](https://www.npmjs.com/package/vue-uploaders)
 
-> vue uploaders tools💁🙅 vue上传组件
+> vue uploaders tools📑📃 vue上传组件
 
 #  支持
 
