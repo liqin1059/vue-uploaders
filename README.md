@@ -12,6 +12,7 @@
 *  图片压缩
 *  ios拍照兼容（旋转问题）
 *  上传回调
+*  图片格式
 *  pc，移动兼容
 
 ## npm install
@@ -35,19 +36,25 @@ Vue.use(VueUpload)
   :deleStyle="deleStyle"
   :compressPercent="0.3"
   :actionUrl="actionUrl"
+  :accept="accept"
   @uploadSuccess="uploadSuccess"
   @uploadError="uploadError"
   @deleteImages="deleteImages">
 </vue-uploaders>
 ```
 
-| 参数 | 类型 | 备注 |
+| 参数 | 类型 | 备注 | 是否必须 | 默认值 |
+|  ------ | ------ | ------ | ------ | ------ |
+| actionUrl | String | 上传地址 | 是 | 空 |
+| limit | Number | 上传图片限制数量 | 否 | 9 |
+| listStyle | Object | 图片列表样式(驼峰命名：backgroundColor) | 否 | {} |
+| deleStyle | Object | 删除图片样式(驼峰命名：backgroundColor) | 否 | {} |
+| compressPercent | Number| 图片压缩比例 | 否 | 0.3 |
+| accept | String| 图片格式 | 否 | image/jpg,image/jpeg,image/png,image/gif |
+
+
+| 事件 | 类型 | 备注 |
 |  ------ | ------ | ------ |
-| actionUrl | String | 上传地址 |
-| limit | Number | 上传图片限制数量 |
-| listStyle | Object | 图片列表样式(驼峰命名：backgroundColor) |
-| deleStyle | Object | 删除图片样式(驼峰命名：backgroundColor) |
-| compressPercent | Number|图片压缩比例 |
 | deleteImages | event | 删除图片事件回调（参数：图片index）|
 | uploadSuccess | event | 上传成功事件回调 |
 | uploadError | event | 上传失败事件回调 |

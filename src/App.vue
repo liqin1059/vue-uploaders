@@ -6,6 +6,7 @@
       :deleStyle="deleStyle"
       :compressPercent="0.3"
       :actionUrl="actionUrl"
+      :accept="accept"
       @uploadSuccess="uploadSuccess"
       @uploadError="uploadError"
       @deleteImages="deleteImages">
@@ -22,6 +23,7 @@ export default {
       msg: 'Welcome to Your Vue.js App',
       listStyle: {},
       deleStyle: {},
+      accept: "image/jpg,image/jpeg,image/png,image/gif",
       actionUrl: 'https://jsonplaceholder.typicode.com/posts/'
     }
   },

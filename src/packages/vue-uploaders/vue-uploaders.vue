@@ -20,7 +20,7 @@
                 class="upload-add upload-add-input"
                 name="file"
                 type="file"
-                accept="image/jpg,image/jpeg,image/png,image/gif">
+                :accept="accept">
         </li>
       </ul>
     </div>
@@ -32,6 +32,11 @@ import EXIF from './exif-js.js'; // 图片信息
 export default {
   name: 'vue-uploaders',
   props: {
+    accept: {
+      type: String,
+      defalut: 'image/jpg,image/jpeg,image/png,image/gif',
+      required: false
+    },
     actionUrl: {
       type: String,
       default: '',
@@ -44,7 +49,7 @@ export default {
     },
     compressPercent: {
       type: Number,
-      default: 9,
+      default: 0.3,
       required: false
     },
     listStyle: {
