@@ -42,6 +42,7 @@ Vue.use(VueUpload)
   @deleteImages="deleteImages">
 </vue-uploaders>
 ```
+# 参数
 
 | 参数 | 类型 | 备注 | 必须 | 默认值 |
 |  ------ | ------ | ------ | ------ | ------ |
@@ -52,6 +53,7 @@ Vue.use(VueUpload)
 | compressPercent | Number| 图片压缩比例 | 否 | 0.3 |
 | accept | String| 图片格式 | 否 | image/jpg<br>image/jpeg<br>image/png<br>image/gif |
 
+# 事件
 
 | 事件 | 类型 | 备注 |
 |  ------ | ------ | ------ |
