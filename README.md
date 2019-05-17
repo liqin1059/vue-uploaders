@@ -43,14 +43,14 @@ Vue.use(VueUpload)
 </vue-uploaders>
 ```
 
-| 参数 | 类型 | 备注 | 是否必须 | 默认值 |
+| 参数 | 类型 | 备注 | 必须 | 默认值 |
 |  ------ | ------ | ------ | ------ | ------ |
 | actionUrl | String | 上传地址 | 是 | 空 |
 | limit | Number | 上传图片限制数量 | 否 | 9 |
-| listStyle | Object | 图片列表样式(驼峰命名：backgroundColor) | 否 | {} |
-| deleStyle | Object | 删除图片样式(驼峰命名：backgroundColor) | 否 | {} |
+| listStyle | Object | 图片列表样式<br>(驼峰命名：backgroundColor) | 否 | {} |
+| deleStyle | Object | 删除图片样式<br>(驼峰命名：backgroundColor) | 否 | {} |
 | compressPercent | Number| 图片压缩比例 | 否 | 0.3 |
-| accept | String| 图片格式 | 否 | image/jpg,image/jpeg,image/png,image/gif |
+| accept | String| 图片格式 | 否 | image/jpg<br>image/jpeg<br>image/png<br>image/gif |
 
 
 | 事件 | 类型 | 备注 |
