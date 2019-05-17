@@ -58,8 +58,8 @@ Vue.use(VueUpload)
 | 事件 | 类型 | 备注 |
 |  ------ | ------ | ------ |
 | deleteImages | event | 删除图片事件回调（参数：图片index）|
-| uploadSuccess | event | 上传成功事件回调 |
-| uploadError | event | 上传失败事件回调 |
+| uploadSuccess | event | 上传成功事件回调（参数：response） |
+| uploadError | event | 上传失败事件回调（参数：错误信息） |
 
 # 展示
 
