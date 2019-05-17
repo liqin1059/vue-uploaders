@@ -1,12 +1,16 @@
 # vue-uploaders
 
-> vue uploaders tools💁🙅
+[![NPM version](https://img.shields.io/npm/v/vue-uploaders.svg)](https://www.npmjs.com/package/vue-uploaders)
+
+> vue uploaders tools💁🙅 vue上传组件
+
+#  支持
 
 *  图片数量限制
 *  多图上传
 *  样式自定义
 *  图片压缩
-*  ios拍照兼容
+*  ios拍照兼容（旋转问题）
 *  上传回调
 *  pc，移动兼容
 
