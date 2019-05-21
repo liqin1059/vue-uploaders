@@ -20,7 +20,6 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
       listStyle: {},
       deleStyle: {},
       accept: "image/jpg,image/jpeg,image/png,image/gif",

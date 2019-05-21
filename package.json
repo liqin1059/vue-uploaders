@@ -1,7 +1,7 @@
 {
   "name": "vue-uploaders",
   "description": "vue upload component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "liqin <1416385177@qq.com>",
   "license": "MIT",
   "private": false,
@@ -26,9 +26,13 @@
     "vue image uploader",
     "vue picture uploader",
     "uploader",
+    "compress",
+    "picture compress",
+    "image compress",
     "upload",
     "图片上传",
     "上传",
+    "图片压缩",
     "多图上传",
     "图片旋转",
     "ios rotate"
