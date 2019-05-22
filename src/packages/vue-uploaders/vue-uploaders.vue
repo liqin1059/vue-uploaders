@@ -1,8 +1,8 @@
 <template>
     <div id="upload">
-      <ul class="upload-list">
+      <ul class="upload-list" v-if="showList">
         <transition-group name="fade">
-          <li class="upload-li images-box animated zoomIn"
+          <li class="upload-li images-box"
               :style="[listStyle]"
               v-for="(item, index) in loadingImagesData"
               :key="item.url">
@@ -23,6 +23,18 @@
                 :accept="accept">
         </li>
       </ul>
+      <ul class="upload-list" v-else>
+        <li class="upload-li upload-add"
+            :style="[listStyle]">
+          <input ref="uploadImagesInput"
+                @change="takePhotos"
+                multiple="multiple"
+                class="upload-add upload-add-input"
+                name="file"
+                type="file"
+                :accept="accept">
+        </li>
+      </ul>
     </div>
 </template>
 <script>
@@ -32,6 +44,11 @@ import EXIF from './exif-js.js'; // 图片信息
 export default {
   name: 'vue-uploaders',
   props: {
+    showList: {
+      type: Boolean,
+      default: true,
+      required: false
+    },
     accept: {
       type: String,
       defalut: 'image/jpg,image/jpeg,image/png,image/gif',

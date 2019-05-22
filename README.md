@@ -6,8 +6,7 @@
 
 #  支持
 
-*  图片数量限制
-*  多图上传
+*  图片数量自定义
 *  样式自定义
 *  图片压缩
 *  ios拍照兼容（旋转问题）
@@ -31,11 +30,12 @@ Vue.use(VueUpload)
 
 ``` html
 <vue-uploaders
+  :actionUrl="actionUrl"
+  :showList="true"
   :limit="9"
   :listStyle="listStyle"
   :deleStyle="deleStyle"
   :compressPercent="0.3"
-  :actionUrl="actionUrl"
   :accept="accept"
   @uploadSuccess="uploadSuccess"
   @uploadError="uploadError"
@@ -47,6 +47,7 @@ Vue.use(VueUpload)
 | 参数 | 类型 | 备注 | 必须 | 默认值 |
 |  ------ | ------ | ------ | ------ | ------ |
 | actionUrl | String | 上传地址 | 是 | 空 |
+| showList | Boolean | 是否展示图片列表 | 否 | true |
 | limit | Number | 上传图片限制数量 | 否 | 9 |
 | listStyle | Object | 图片列表样式<br>(驼峰命名：backgroundColor) | 否 | {} |
 | deleStyle | Object | 删除图片样式<br>(驼峰命名：backgroundColor) | 否 | {} |

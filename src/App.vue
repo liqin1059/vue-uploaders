@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <vue-uploaders
+      :showList="showList"
       :limit="9"
       :listStyle="listStyle"
       :deleStyle="deleStyle"
@@ -20,17 +21,18 @@ export default {
   name: 'app',
   data () {
     return {
+      showList: true,
       listStyle: {},
       deleStyle: {},
       accept: "image/jpg,image/jpeg,image/png,image/gif",
-      actionUrl: 'https://jsonplaceholder.typicode.com/posts/'
+      actionUrl: ''
     }
   },
   methods: {
     uploadSuccess(res) {},
     uploadError(err) {},
     deleteImages(index) {
-      console.log(index);
+      console.log(`当前点击删除的图片序号是${index}`);
     }
   }
 }
