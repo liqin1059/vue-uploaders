@@ -13,11 +13,12 @@
           </li>
         </transition-group>
         <li class="upload-li upload-add"
-            :style="[listStyle]">
+            :style="[listStyle, inputStyle]">
           <input ref="uploadImagesInput"
                 @change="takePhotos"
                 multiple="multiple"
                 class="upload-add upload-add-input"
+                :style="[inputStyle]"
                 name="file"
                 type="file"
                 :accept="accept">
@@ -25,11 +26,12 @@
       </ul>
       <ul class="upload-list" v-else>
         <li class="upload-li upload-add"
-            :style="[listStyle]">
+            :style="[listStyle, inputStyle]">
           <input ref="uploadImagesInput"
                 @change="takePhotos"
                 multiple="multiple"
                 class="upload-add upload-add-input"
+                :style="[inputStyle]"
                 name="file"
                 type="file"
                 :accept="accept">
@@ -78,6 +80,13 @@ export default {
       required: false
     },
     deleStyle: {
+      type: Object,
+      default: () => {
+        return {}
+      },
+      required: false
+    },
+    inputStyle: {
       type: Object,
       default: () => {
         return {}
@@ -349,7 +358,7 @@ export default {
   opacity: 0;
 }
 .upload-add-input{
-  opacity: 0;
+  opacity: 0!important;
 }
 .upload-list{
   margin-left: -5px;

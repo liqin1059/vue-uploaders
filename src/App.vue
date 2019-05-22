@@ -5,6 +5,7 @@
       :limit="9"
       :listStyle="listStyle"
       :deleStyle="deleStyle"
+      :inputStyle="inputStyle"
       :compressPercent="0.3"
       :actionUrl="actionUrl"
       :accept="accept"
@@ -24,6 +25,7 @@ export default {
       showList: true,
       listStyle: {},
       deleStyle: {},
+      inputStyle: {},
       accept: "image/jpg,image/jpeg,image/png,image/gif",
       actionUrl: ''
     }

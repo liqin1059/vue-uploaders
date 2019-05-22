@@ -9,6 +9,7 @@
 *  图片数量自定义
 *  样式自定义
 *  图片压缩
+*  上传按钮自定义
 *  ios拍照兼容（旋转问题）
 *  上传回调
 *  图片格式
@@ -30,13 +31,14 @@ Vue.use(VueUpload)
 
 ``` html
 <vue-uploaders
-  :actionUrl="actionUrl"
+  :actionUrl="http://"
   :showList="true"
   :limit="9"
-  :listStyle="listStyle"
-  :deleStyle="deleStyle"
+  :listStyle="{}"
+  :deleStyle="{}"
+  :inputStyle="{}"
   :compressPercent="0.3"
-  :accept="accept"
+  :accept="image/jpg,image/jpeg,image/png,image/gif"
   @uploadSuccess="uploadSuccess"
   @uploadError="uploadError"
   @deleteImages="deleteImages">
@@ -51,6 +53,7 @@ Vue.use(VueUpload)
 | limit | Number | 上传图片限制数量 | 否 | 9 |
 | listStyle | Object | 图片列表样式<br>(驼峰命名：backgroundColor) | 否 | {} |
 | deleStyle | Object | 删除图片样式<br>(驼峰命名：backgroundColor) | 否 | {} |
+| inputStyle | Object | 上传按钮样式<br>(驼峰命名：backgroundColor) | 否 | {} |
 | compressPercent | Number| 图片压缩比例 | 否 | 0.3 |
 | accept | String| 图片格式 | 否 | image/jpg<br>image/jpeg<br>image/png<br>image/gif |
 
