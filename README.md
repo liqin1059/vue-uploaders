@@ -7,7 +7,7 @@
 #  支持
 
 *  图片数量自定义
-*  样式自定义
+*  图片列表样式自定义
 *  图片压缩
 *  上传按钮自定义
 *  ios拍照兼容（旋转问题）
@@ -38,7 +38,7 @@ Vue.use(VueUpload)
   :deleStyle="{}"
   :inputStyle="{}"
   :compressPercent="0.3"
-  :accept="image/jpg,image/jpeg,image/png,image/gif"
+  :accept="'image/jpg,image/jpeg,image/png,image/gif'"
   @uploadSuccess="uploadSuccess"
   @uploadError="uploadError"
   @deleteImages="deleteImages">

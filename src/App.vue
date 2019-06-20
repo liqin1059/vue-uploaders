@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <vue-uploaders
-      :showList="showList"
+      :show-list="showList"
       :limit="9"
-      :listStyle="listStyle"
-      :deleStyle="deleStyle"
-      :inputStyle="inputStyle"
-      :compressPercent="0.3"
-      :actionUrl="actionUrl"
+      :list-style="listStyle"
+      :dele-style="deleStyle"
+      :input-style="inputStyle"
+      :compress-percent="0.3"
+      :action-url="actionUrl"
       :accept="accept"
-      @uploadSuccess="uploadSuccess"
-      @uploadError="uploadError"
-      @deleteImages="deleteImages">
+      @upload-success="uploadSuccess"
+      @upload-error="uploadError"
+      @delete-images="deleteImages">
     </vue-uploaders>
   </div>
 </template>
